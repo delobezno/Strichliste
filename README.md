@@ -1,0 +1,2 @@
+# Strichliste
+tally
