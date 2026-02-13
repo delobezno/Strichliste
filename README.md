@@ -9,3 +9,6 @@ Each occurrence is marked with a vertical stroke.
 Every fifth stroke is drawn diagonally across the previous four, forming a group of five.
 
 This grouping makes it easier to quickly sum up the total.
+
+# How it starts?
+I placed a shortcut to the PowerShell file on the desktop. I then added a keyboard shortcut to this shortcut so that the script can be easily started via the keyboard.
