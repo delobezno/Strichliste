@@ -1,14 +1,41 @@
-# Strichliste
-eTally
+# 📊 PowerShell Tally Counter (Strichliste)
+A lightweight, GUI-based tally counter built with PowerShell and WinForms. This tool is designed to run in restricted environments where third-party software installation is not permitted.
 
-A Strichliste is a simple tally system used to count occurrences of events or items. It’s commonly used in Germany for tracking frequencies in various contexts, such as surveys, statistics, or everyday counting tasks.
+🌟 Key Features
+Persistent Storage: Automatically saves the current count to a strichliste.txt file in the script directory.
 
-How It Works:
-Each occurrence is marked with a vertical stroke.
+Session Continuity: Loads your previous count upon startup.
 
-Every fifth stroke is drawn diagonally across the previous four, forming a group of five.
+Simple GUI: Features a clean interface with "Always on Top" functionality for easy access while working in other apps.
 
-This grouping makes it easier to quickly sum up the total.
+Native Compatibility: Runs on any standard Windows machine using built-in PowerShell libraries.
 
-# How it starts?
-I placed a shortcut to the PowerShell file on the desktop. I then added a keyboard shortcut to this shortcut so that the script can be easily started via the keyboard.
+🛠️ How It Works
+The script utilizes the System.Windows.Forms assembly to render a window. It manages data through simple IO operations:
+
+Read: Checks for an existing .txt file to fetch the last known integer.
+
+Display: Updates a bold Arial label in real-time.
+
+Write: Every click on +1 or Reset immediately updates the local text file to prevent data loss.
+
+🚀 How to Run
+Since this script requires no installation, you can run it directly:
+
+Right-click Strichliste.ps1.
+
+Select Run with PowerShell.
+
+(Optional) Create a desktop shortcut to the script for quick access.
+
+💡 Why This Project?
+This tool was developed as part of my "Native Automation" initiative. It demonstrates how to:
+
+Build User Interfaces (UI) using only built-in Windows components.
+
+Handle file-based data persistence.
+
+Provide a practical solution for team members who need to track repetitive tasks manually.
+
+🤝 Collaborative Note
+I am always looking for ways to improve these types of utility scripts. If you have ideas for adding features (like a "-1" button or multiple counters), feel free to reach out. I value feedback and different perspectives on how to make these tools more intuitive for everyone!
