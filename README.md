@@ -1,5 +1,5 @@
 # Strichliste
-tally
+eTally
 
 A Strichliste is a simple tally system used to count occurrences of events or items. It’s commonly used in Germany for tracking frequencies in various contexts, such as surveys, statistics, or everyday counting tasks.
 
